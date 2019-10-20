@@ -230,22 +230,11 @@ public class Drawer extends JPanel  {
     static int buildarray(String s) { //1. Буквы тригонометрических функции, 2. Буква х, 3. Скобки, 4. Арифметические действия, 5. Цифры
         Scanner myObj = new Scanner(System.in);
         double beg, end;
-//        int step;
-//        String start = s.substring(0, 4);
-//        if (!start.equals("y = ")) {
-//            System.out.println("Выражение имеет неправильный вид:\n" + start + "\n");
-//            return 0;
-//        }
-//        start = s.substring(4);
         System.out.println("Функция: " + s);
         //cin >> beg >> end;
         beg = -range;
         end = range;
-//        System.out.println("Шаг по х: (1. - 0.1, 2. - 0.05, 3. - 0.02, 4. - 0.01): ");
-//        step = Integer.parseInt(myObj.nextLine());
-//        step = Step(step);
         int size = (int) ((end - beg) / step);
-//        countd = size;
         X = new double[size+1];
         Y = new double[size+1];
         System.out.println("Точек: " + (size + 1));
@@ -287,80 +276,5 @@ public class Drawer extends JPanel  {
         pointsAmount = buildarray(args[0]);
         //System.out.println(pointsAmount);
         mydisplay(pointsAmount, args);
-
-//        System.out.println("1 - Построить функцию из списка\n2 - Построить последнюю функцию\n3 - Ввести и построить новую функцию: ");
-//        Scanner com = new Scanner(System.in);
-//        command = Integer.parseInt(com.nextLine());
-//        System.out.println("command = " + command + "\nДиапазон функции (в каждую сторону): ");
-//        range = Integer.parseInt(com.nextLine());
-//        switch (command) {
-//            case 1:
-//                func = funclist(path);
-//                System.out.println("Введите номер функции: ");
-//                do {
-//                    fnum = Integer.parseInt(com.nextLine());
-//                    if (fnum > func.size() || fnum < 0) System.out.println("Номера не существует, введите заного: ");
-//                    if (fnum == 0) break;
-//                } while (fnum > func.size());
-//                System.out.println("Построение функции " + func.get(fnum - 1) + "\n\n");
-//                pointsAmount = buildarray(func.get(fnum - 1));
-//                if (pointsAmount == 0)
-//                    System.out.println("Функция не может быть построена\n");
-//                else
-//                {
-//                    mydisplay(pointsAmount, args);
-//                }
-//                func.clear();
-//                break;
-//            case 2:
-//                try(BufferedReader reader = new BufferedReader(new FileReader(path))){
-//                    String str = "";
-//                    while ((x = reader.readLine()) != null)
-//                        str = x;  // Запись из файла в вектор
-//                    pointsAmount = buildarray(str);
-//                } catch (IOException e)
-//                {
-//                    e.printStackTrace();
-//                }
-//                if (pointsAmount == 0)
-//                    System.out.println("Функция не может быть построена\n");
-//                else
-//                {
-//                    mydisplay(pointsAmount, args);
-//                }
-//                break;
-//            case 3:
-//                System.out.println("Функция: ");
-//                x = com.nextLine();
-//                try(FileWriter writer = new FileWriter(path, true)){
-//                    writer.write("\n" + x);
-//                } catch(IOException e){
-//                    e.printStackTrace();
-//                }
-//                pointsAmount = buildarray(x);
-//                if (pointsAmount == 0)
-//                    System.out.println("Функция не может быть построена\n");
-//                else
-//                {
-//                    mydisplay(pointsAmount, args);
-//                }
-//                break;
-
-
-//                case 4:
-//                    funclist(fin, func);
-//                    fin.close();
-//                    cout << "Номер удаляемой функции: ";
-//                    do {
-//                        cin >> fnum;
-//                        if (fnum > func.size()) cout << "Номера не существует, введите заного: ";
-//                    } while (fnum > func.size());
-//                    func.erase(func.begin() + fnum - 1);
-//                    fout.close();
-//                    fout.open(path);
-//                    copy(func.begin(), func.end(), ostream_iterator < string > (fout, "\n"));
-//                    func.clear();
-//                    fout.close();
-//                    break;
     }
 }
