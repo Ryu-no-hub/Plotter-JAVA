@@ -1,0 +1,11 @@
+﻿  pch.cpp
+  PlotterCPP.cpp
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(310): warning C4018: >: несоответствие типов со знаком и без знака
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(312): warning C4018: >: несоответствие типов со знаком и без знака
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(337): warning C4018: >: несоответствие типов со знаком и без знака
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(338): warning C4018: >: несоответствие типов со знаком и без знака
+  Создание кода
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(136): warning C4715: operate: значение возвращается не при всех путях выполнения
+  All 397 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  PlotterCPP.vcxproj -> C:\Users\Андрей\source\repos\PlotterCPP\Release\PlotterCPP.exe
