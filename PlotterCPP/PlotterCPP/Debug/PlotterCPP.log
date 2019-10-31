@@ -1,0 +1,7 @@
+﻿  PlotterCPP.cpp
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(312): warning C4018: >: несоответствие типов со знаком и без знака
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(314): warning C4018: >: несоответствие типов со знаком и без знака
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(339): warning C4018: >: несоответствие типов со знаком и без знака
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(340): warning C4018: >: несоответствие типов со знаком и без знака
+c:\users\андрей\source\repos\plottercpp\plottercpp\plottercpp.cpp(136): warning C4715: operate: значение возвращается не при всех путях выполнения
+  PlotterCPP.vcxproj -> C:\Users\Андрей\source\repos\PlotterCPP\Debug\PlotterCPP.exe
